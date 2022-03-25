@@ -10,7 +10,6 @@ import seaborn as sns
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import dash_bootstrap_components as dbc
-
 app = Dash(__name__,external_stylesheets=[dbc.themes.CYBORG])
 app.title = "Z by HP worldwide data!"
 server = app.server
