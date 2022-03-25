@@ -16,11 +16,11 @@ app.title = "Z by HP worldwide data!"
 server = app.server
 
 #reading csv files
-fires = pd.read_csv('./assignment-1/fires_data_11-29-2021.csv')
-energy = pd.read_csv('./assignment-1/energy_use_data_11-29-2021.csv')
-land = pd.read_csv('./assignment-1/land_cover_data_11-30-2021.csv')
-temp = pd.read_csv('./assignment-1/temperature_change_data_11-29-2021.csv')
-waste =  pd.read_csv( './assignment-1/waste_disposal_data_11-29-2021.csv')
+fires = pd.read_csv('./fires_data_11-29-2021.csv')
+energy = pd.read_csv('./energy_use_data_11-29-2021.csv')
+land = pd.read_csv('./land_cover_data_11-30-2021.csv')
+temp = pd.read_csv('./temperature_change_data_11-29-2021.csv')
+waste =  pd.read_csv( './waste_disposal_data_11-29-2021.csv')
 
 grouped_land = land.groupby(["Area", "Area Code (ISO3)", "Year"])["Value"].sum().reset_index()
 
